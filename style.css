@@ -81,7 +81,7 @@ h2 {
 
 /* Photo box for albums */
 .photo-box {
-  width: calc(50% - 10px);
+  width: calc(50% - 10px); /* 保持每行两个 */
   border: 2px solid #ccc;
   border-radius: 10px;
   padding: 10px;
@@ -89,11 +89,15 @@ h2 {
   box-shadow: 0 0 8px rgba(0,0,0,0.05);
 }
 
-.photo-box img {
-  width: 100%;
-  height: auto;
-  display: block;
-  border-radius: 6px;
+/* 响应式布局保持一行两个 */
+@media (max-width: 600px) {
+  .grid-two {
+    gap: 10px;
+  }
+
+  .photo-box {
+    width: calc(50% - 5px); /* 手机上也每行两个 */
+  }
 }
 
 /* Ensure all images never exceed container width */

@@ -4,6 +4,145 @@
   <meta charset="UTF-8" />
   <title>My Photo Wall</title>
   <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      background-color: #f7f7f7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    header h1 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 3em;
+      margin: 0;
+    }
+
+    .subtitle {
+      font-size: 1.2em;
+      margin-top: 10px;
+    }
+
+    nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 10px;
+    }
+
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 15px;
+      font-size: 1.2em;
+      transition: color 0.3s ease;
+    }
+
+    nav a:hover {
+      color: #ff6347;
+    }
+
+    section {
+      padding: 40px 20px;
+      text-align: center;
+    }
+
+    section h2 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2.5em;
+      color: #333;
+      margin-bottom: 20px;
+    }
+
+    section h3 {
+      font-family: 'Open Sans', sans-serif;
+      font-size: 2em;
+      margin: 20px 0 10px;
+      color: #444;
+    }
+
+    .card {
+      display: inline-block;
+      width: 30%;
+      margin: 20px;
+      background-color: #fff;
+      border-radius: 10px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      overflow: hidden;
+      transition: transform 0.3s ease;
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .card p {
+      font-size: 1em;
+      padding: 15px;
+      color: #444;
+    }
+
+    .card:hover {
+      transform: scale(1.05);
+    }
+
+    .grid-two {
+      display: flex;
+      justify-content: space-around;
+      flex-wrap: wrap;
+      margin-top: 30px;
+    }
+
+    .photo-box {
+      margin: 15px;
+      width: 45%;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .photo-box img {
+      width: 100%;
+      height: auto;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+
+    .photo-box:hover img {
+      transform: scale(1.05);
+    }
+
+    .friends-section {
+      font-size: 1.2em;
+      margin-top: 20px;
+      color: #444;
+    }
+
+    footer {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 10px 0;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+      font-size: 1em;
+    }
+  </style>
 </head>
 <body>
   <header>
@@ -20,15 +159,15 @@
     <h2>My Hobbies</h2>
     <div class="card">
       <img src="images/f1.jpg" alt="Formula 1" />
-      <p>I like Formula 1 very much and my home team is McLaren. If you also like it, you are welcome to communicate with me, let's enjoy the fast and furious together.</p>
+      <p>I like Formula 1 very much and my home team is McLaren. If you also like it, you are welcome to communicate with me, let's enjoy the fast and furious together. 🏎️</p>
     </div>
     <div class="card">
       <img src="images/hp.jpg" alt="Movies" />
-      <p>I like watching movies. My favorite movies are Interstellar, Titanic, Coco, Harry Potter and so on.</p>
+      <p>I like watching movies. My favorite movies are Interstellar, Titanic, Coco, Harry Potter and so on. 🎬</p>
     </div>
     <div class="card">
       <img src="images/hx.jpg" alt="Music" />
-      <p>I also really like listening to music, I love all styles of music, such as R&B, Hip-Hop, Pop and so on.</p>
+      <p>I also really like listening to music, I love all styles of music, such as R&B, Hip-Hop, Pop and so on. 🎶</p>
     </div>
   </section>
 
@@ -36,28 +175,28 @@
     <h2>Alma Mater recorded by me</h2>
 
     <!-- Spring Section -->
-    <h3>Spring</h3>
+    <h3>Spring 🌸</h3>
     <div class="grid-two">
       <div class="photo-box"><img src="images/1.jpg" alt="School 1" /></div>
       <div class="photo-box"><img src="images/2.jpg" alt="School 2" /></div>
     </div>
 
     <!-- Summer Section -->
-    <h3>Summer</h3>
+    <h3>Summer 🌞</h3>
     <div class="grid-two">
       <div class="photo-box"><img src="images/3.jpg" alt="School 3" /></div>
       <div class="photo-box"><img src="images/4.jpg" alt="School 4" /></div>
     </div>
 
     <!-- Autumn Section -->
-    <h3>Autumn</h3>
+    <h3>Autumn 🍂</h3>
     <div class="grid-two">
       <div class="photo-box"><img src="images/5.jpg" alt="School 5" /></div>
       <div class="photo-box"><img src="images/6.jpg" alt="School 6" /></div>
     </div>
 
     <!-- Winter Section -->
-    <h3>Winter</h3>
+    <h3>Winter ❄️</h3>
     <div class="grid-two">
       <div class="photo-box"><img src="images/7.jpg" alt="School 7" /></div>
       <div class="photo-box"><img src="images/8.jpg" alt="School 8" /></div>
@@ -66,7 +205,11 @@
 
   <section id="friends">
     <h2>Others</h2>
-    <p>This section is coming soon. Stay tuned for updates!</p>
+    <p class="friends-section">This section is coming soon. Stay tuned for updates! 👀</p>
   </section>
+
+  <footer>
+    <p>&copy; 2025 My Photo Wall</p>
+  </footer>
 </body>
 </html>

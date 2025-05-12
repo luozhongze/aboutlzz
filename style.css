@@ -79,25 +79,24 @@ h2 {
   gap: 20px;
 }
 
-/* Photo box for albums */
+/* Photo box layout only */
 .photo-box {
-  width: calc(50% - 10px); /* 保持每行两个 */
-  border: 2px solid #ccc;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: white;
-  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+  width: calc(50% - 10px);
+  overflow: hidden;
 }
 
-/* 响应式布局保持一行两个 */
-@media (max-width: 600px) {
-  .grid-two {
-    gap: 10px;
-  }
+/* Image styling with hover effect */
+.photo-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
 
-  .photo-box {
-    width: calc(50% - 5px); /* 手机上也每行两个 */
-  }
+.photo-box img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.2);
 }
 
 /* Ensure all images never exceed container width */
@@ -109,15 +108,7 @@ img {
 
 /* Responsive layout for smaller screens */
 @media (max-width: 600px) {
-  .grid-two {
-    flex-direction: column;
-  }
-
   .photo-box {
-    width: 100%;
-  }
-
-  .card img {
-    width: 100%;
+    width: calc(50% - 5px);
   }
 }

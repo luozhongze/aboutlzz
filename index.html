@@ -1,18 +1,57 @@
 <!DOCTYPE html>
-<html lang="zh-CN">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>我的照片墙</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <title>My Photo Wall</title>
+  <link rel="stylesheet" href="style.css" />
 </head>
 <body>
-  <h1>欢迎来到我的照片墙</h1>
-  <p>这里是我日常生活的一些记录。</p>
+  <header>
+    <nav>
+      <a href="#hobbies">Hobbies</a>
+      <a href="#alma-mater">Alma Mater</a>
+      <a href="#friends">Friends</a>
+    </nav>
+    <h1>Welcome to moments about me</h1>
+    <p class="subtitle">Here I share some memories and passions that make me who I am.</p>
+  </header>
 
-  <div class="gallery">
-    <img src="images/1.jpg" alt="照片1">
-    <img src="images/2.jpg" alt="照片2">
-    <img src="images/3.jpg" alt="照片3">
-  </div>
+  <section id="hobbies">
+    <h2>My Hobbies</h2>
+    <div class="card">
+      <img src="images/f1.jpg" alt="Formula 1" />
+      <p>I like Formula 1 very much and my home team is McLaren. If you also like it, you are welcome to communicate with me, let's enjoy the fast and furious together.</p>
+    </div>
+    <div class="card">
+      <img src="images/hp.jpg" alt="Movies" />
+      <p>I like watching movies. My favorite movies are Interstellar, Titanic, Coco, Harry Potter and so on.</p>
+    </div>
+    <div class="card">
+      <img src="images/hx.jpg" alt="Music" />
+      <p>I also really like listening to music, I love all styles of music, such as R&B, Hip-Hop, Pop and so on.</p>
+    </div>
+  </section>
+
+  <section id="alma-mater">
+    <h2>Alma Mater recorded by me</h2>
+    <div class="grid-two">
+      <img src="images/1.jpg" alt="School 1" />
+      <img src="images/2.jpg" alt="School 2" />
+      <img src="images/3.jpg" alt="School 3" />
+      <img src="images/4.jpg" alt="School 4" />
+      <img src="images/5.jpg" alt="School 5" />
+      <img src="images/6.jpg" alt="School 6" />
+      <img src="images/7.jpg" alt="School 7" />
+      <img src="images/8.jpg" alt="School 8" />
+    </div>
+  </section>
+
+  <section id="friends">
+    <h2>Friends</h2>
+    <div class="grid-two">
+      <img src="images/friends1.jpg" alt="Friend 1" />
+      <img src="images/friends2.jpg" alt="Friend 2" />
+    </div>
+  </section>
 </body>
 </html>

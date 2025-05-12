@@ -69,13 +69,22 @@ h2 {
 .grid-two {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-between;
   gap: 20px;
 }
 
-.grid-two img {
-  width: 45%;
-  max-width: 450px;
+.photo-box {
+  width: calc(50% - 10px);
+  border: 2px solid #ccc;
   border-radius: 10px;
-  box-shadow: 0 0 5px rgba(0,0,0,0.1);
+  padding: 10px;
+  background-color: white;
+  box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+
+.photo-box img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 6px;
 }

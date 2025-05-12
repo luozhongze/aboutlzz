@@ -1,3 +1,4 @@
+/* Base styles */
 body {
   font-family: Arial, sans-serif;
   margin: 0;
@@ -6,6 +7,7 @@ body {
   color: #333;
 }
 
+/* Header and Navigation */
 header {
   background: #fff;
   padding: 20px;
@@ -33,6 +35,7 @@ nav a:hover {
   color: #666;
 }
 
+/* Section styling */
 section {
   padding: 40px 20px;
   max-width: 1000px;
@@ -44,6 +47,7 @@ h2 {
   margin-bottom: 30px;
 }
 
+/* Card styling */
 .card {
   background: white;
   margin-bottom: 20px;
@@ -56,7 +60,8 @@ h2 {
 }
 
 .card img {
-  width: 300px;
+  max-width: 100%;
+  height: auto;
   border-radius: 10px;
   margin-bottom: 15px;
 }
@@ -66,6 +71,7 @@ h2 {
   text-align: center;
 }
 
+/* Grid layout */
 .grid-two {
   display: flex;
   flex-wrap: wrap;
@@ -73,6 +79,7 @@ h2 {
   gap: 20px;
 }
 
+/* Photo box for albums */
 .photo-box {
   width: calc(50% - 10px);
   border: 2px solid #ccc;
@@ -87,4 +94,26 @@ h2 {
   height: auto;
   display: block;
   border-radius: 6px;
+}
+
+/* Ensure all images never exceed container width */
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Responsive layout for smaller screens */
+@media (max-width: 600px) {
+  .grid-two {
+    flex-direction: column;
+  }
+
+  .photo-box {
+    width: 100%;
+  }
+
+  .card img {
+    width: 100%;
+  }
 }
